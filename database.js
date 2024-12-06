@@ -1,5 +1,5 @@
-const sqlite3 = require('sqlite3').verbose();
-const conn = new sqlite3.Database('./wikidata.db', () => 0);  // 데이타베이스
+import Database from "better-sqlite3";
+const conn = new Database('./wikidata.db');  // 데이타베이스
 
 // 파이선 SQLite 모방
 const curs = {
