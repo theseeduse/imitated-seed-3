@@ -21,14 +21,7 @@ Pull Request 시 서버 코드에는 `?.`, `??`, `import` 등의 신문법, 프�
 파서 함수 이름이 마크다운인 이유는 개발 초기에는 마크다운을 사용했기 때문이다.
 
 ## 기초 사용 방법
-- **만약 config.json에서 `use_external_js`과 `use_external_css`이 true이면 아래 단계는 생략해도 된다.** 스킨만 추가하면 된다.
-  - css, js 디렉토리를 만든다.
-    - https://theseed.io/js/theseed.js, https://theseed.io/js/jquery-2.1.4.min.js, https://theseed.io/js/jquery-1.11.3.min.js, https://theseed.io/js/intersection-observer.js, https://theseed.io/js/dateformatter.js )를 각각 다운로드받아 js 디렉토리에 복사한다.
-    - https://theseed.io/css/wiki.css, https://theseed.io/css/katex.min.css, https://theseed.io/css/diffview.css )를 각각 다운로드받아 css 디렉토리에 복사한다.
-- skins 디렉토리를 만든다.
-  - [buma](https://github.com/LiteHell/theseed-skin-buma/tree/d77eef50a77007da391c5082b4b94818db372417), [liberty](https://github.com/namuwiki/theseed-skin-liberty/tree/153cf78f70206643ec42e856aff8280dc21eb2c0) 등 원하는 스킨을 내려받고 skins 디렉토리에 스킨 이름으로 하위디렉토리를 만들어 복사한다.
-- `npm i`를 실행한다.
-- `node server`를 실행한다.
+**개발이 아직 완료되지 않아 매우 불안정하다. 사용하지 않는 것을 권장.**
 
 ## 이메일 설정법 [Gmail]
 - 먼저 "자신사이트주소/admin/config" 에 접속해 `사이트 주소`란에 자신의 사이트주소를 입력한다.
@@ -70,9 +63,12 @@ Pull Request 시 서버 코드에는 `?.`, `??`, `import` 등의 신문법, 프�
   - `passwd`: (기본값 []) 이메일 주소의 비밀번호(gmail의 경우 앱 비밀번호).
   - `disable_file_server`: (기본값 false) 별도 파일 서버 없이도 파일 업로드가 가능하게 한다.
   - `max_file_size`: (기본값 2000000) 최대 파일 크기 (바이트 단위)
+~~ - `disable_ipv6`: (기본값 false) ipv6 지원 관련 문제로 ipv6를 차단하는 옵션
+  - `document_max`: (기본값 1) 문서의 최고 길이 지정
+  - `include_max`: (기본값 1) include 문법 호출 개수
 
 ## 라이선스
-자유롭게 쓰기 바란다.
+사용을 금한다. 단, 사용을 원할 경우 이슈 등을 통해 개발자에게 문의를 하길 바라며, **정좆은 꺼지세요**
 
 ## 더 시드와 다른 것들
 - 엔진에서 백엔드와 프론트엔드를 모두 처리한다. (오픈나무에서 영향 받음)
